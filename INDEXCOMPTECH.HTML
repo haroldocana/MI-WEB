@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPTECH | Ecosistema IT Total: IA, Cloud, CRM y Seguridad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; background-color: #020617; }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-flow 3s linear infinite;
+        }
+
+        @keyframes gradient-flow {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: #3b82f6;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -15px rgba(59, 130, 246, 0.3);
+        }
+
+        .hero-mesh {
+            background-color: #020617;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%);
+        }
+
+        .floating {
+            animation: floating 4s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body class="text-slate-200 overflow-x-hidden">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 py-6 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-white">
+                <span class="text-blue-500">COMP</span>TECH
+            </div>
+            <div class="hidden md:flex space-x-8 items-center font-bold text-xs uppercase tracking-widest">
+                <a href="#servicios" class="hover:text-blue-400 transition">Portafolio</a>
+                <a href="#ia" class="hover:text-blue-400 transition">IA Predictiva</a>
+                <a href="#correo" class="hover:text-blue-400 transition">Comunicación</a>
+                <a href="#contacto" class="bg-blue-600 text-white px-6 py-3 rounded-2xl hover:bg-blue-700 transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="min-h-screen hero-mesh flex items-center pt-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal-left">
+                <div class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 px-4 py-2 rounded-full mb-8">
+                    <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Tecnología de Vanguardia en Guatemala</span>
+                </div>
+                <h1 class="text-6xl md:text-8xl font-extrabold leading-[1.1] mb-8 text-white">
+                    Oficina <span class="gradient-text">Total</span> con IA.
+                </h1>
+                <p class="text-xl text-slate-400 mb-10 max-w-lg leading-relaxed">
+                    Unificamos su <strong>CRM</strong>, <strong>Correo con Backup</strong>, <strong>IA Predictiva</strong> y <strong>Respaldo Inmutable</strong> en una sola gestión profesional.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#contacto" class="bg-white text-slate-900 px-10 py-5 rounded-3xl font-bold hover:bg-blue-600 hover:text-white transition-all transform hover:scale-105 shadow-xl shadow-white/10">Solicitar Auditoría</a>
+                </div>
+            </div>
+            <div class="relative flex justify-center reveal-right">
+                <div class="glass-card p-10 rounded-[40px] w-full max-w-md floating">
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-bold text-slate-500 uppercase">Estado CRM Monday</span>
+                            <span class="text-green-400 text-xs">Conectado</span>
+                        </div>
+                        <div class="h-1 bg-slate-800 rounded-full overflow-hidden">
+                            <div class="w-full h-full bg-blue-500 animate-pulse"></div>
+                        </div>
+                        <div class="p-4 bg-white/5 rounded-2xl flex items-center justify-between">
+                            <span class="text-sm">Kerio Backup:</span>
+                            <span class="text-blue-400 font-bold">Resguardado</span>
+                        </div>
+                        <div class="p-4 bg-white/5 rounded-2xl flex items-center justify-between">
+                            <span class="text-sm">IA Atera: Parches</span>
+                            <span class="text-green-400 font-bold">100% OK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio Tecnológico -->
+    <section id="servicios" class="py-32 px-6 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 reveal-top">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Ecosistema Tecnológico de COMPTECH</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Soluciones integradas para llevar su empresa al siguiente nivel de eficiencia y seguridad absoluta.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- MONDAY CRM -->
+                <div class="glass-card p-10 rounded-[40px] reveal-bottom">
+                    <div class="w-16 h-16 bg-pink-600/20 rounded-2xl flex items-center justify-center mb-8">
+                        <i class="fas fa-tasks text-2xl text-pink-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">CRM Monday.com</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Gestione sus ventas, proyectos y equipos en una plataforma intuitiva. Automatice sus flujos de trabajo en Guatemala.</p>
+                    <ul class="space-y-3 text-xs text-slate-500 font-semibold">
+                        <li><i class="fas fa-check text-pink-500 mr-2"></i> Gestión de Prospectos</li>
+                        <li><i class="fas fa-check text-pink-500 mr-2"></i> Dashboards de Ventas</li>
+                        <li><i class="fas fa-check text-pink-500 mr-2"></i> Colaboración en Tiempo Real</li>
+                    </ul>
+                </div>
+
+                <!-- WASABI + MSP360 -->
+                <div class="glass-card p-10 rounded-[40px] reveal-bottom" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-blue-600/20 rounded-2xl flex items-center justify-center mb-8">
+                        <i class="fas fa-cloud-download-alt text-2xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Cloud & Backup 360</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Combinamos <strong>MSP360</strong> y <strong>Wasabi</strong> para un respaldo de imagen inmutable. Sus datos son intocables por Ransomware.</p>
+                    <ul class="space-y-3 text-xs text-slate-500 font-semibold">
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Respaldo Inmutable</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Seguridad XDR Integrada</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Recuperación Granular</li>
+                    </ul>
+                </div>
+
+                <!-- KERIO + BACKUP -->
+                <div class="glass-card p-10 rounded-[40px] reveal-bottom" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 bg-orange-600/20 rounded-2xl flex items-center justify-center mb-8">
+                        <i class="fas fa-mail-bulk text-2xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Kerio Email & Backup</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Comunicaciones unificadas con <strong>Kerio Backup</strong> dedicado. Protegemos cada correo y contacto enviado.</p>
+                    <ul class="space-y-3 text-xs text-slate-500 font-semibold">
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i> Correo Seguro Privado</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i> Respaldo de Buzones</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i> Filtro Inteligente de Spam</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATERA IA & MANYCHAT -->
+    <section id="ia" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2 reveal-left">
+                <h2 class="text-4xl font-extrabold text-white mb-8">Soporte Predictivo con IA</h2>
+                <p class="text-slate-400 mb-10 leading-relaxed text-lg">
+                    Mediante la inteligencia de <strong>Atera</strong> monitoreamos sus sistemas para resolver problemas antes de que sucedan, y con <strong>ManyChat</strong> habilitamos un canal de soporte directo vía WhatsApp.
+                </p>
+                <div class="bg-white/5 p-8 rounded-[40px] border border-white/10">
+                    <div class="flex items-center space-x-6">
+                        <div class="text-4xl text-blue-500 font-black">AI</div>
+                        <div class="text-sm text-slate-400 italic">"Nuestro sistema detecta fallos de hardware y parches faltantes en tiempo real, aplicando correcciones automáticas".</div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 grid grid-cols-2 gap-4 reveal-right">
+                <div class="bg-blue-600/10 p-10 rounded-[40px] border border-blue-600/20 text-center glass-card">
+                    <i class="fab fa-whatsapp text-5xl text-green-400 mb-4"></i>
+                    <div class="text-xs font-bold uppercase tracking-widest text-slate-400">ManyChat Support</div>
+                </div>
+                <div class="bg-purple-600/10 p-10 rounded-[40px] border border-purple-600/20 text-center glass-card">
+                    <i class="fas fa-microchip text-5xl text-purple-400 mb-4"></i>
+                    <div class="text-xs font-bold uppercase tracking-widest text-slate-400">Atera RMM IA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto (Formulario Real) -->
+    <section id="contacto" class="py-32 px-6">
+        <div class="max-w-4xl mx-auto glass-card p-12 md:p-20 rounded-[50px] reveal-top">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-white mb-4">Caja de Interés COMPTECH</h2>
+                <p class="text-slate-400">Seleccione los servicios para su auditoría técnica y un experto le contactará.</p>
+            </div>
+            
+            <!-- FORMULARIO VINCULADO A FORMSPREE -->
+            <form action="https://formspree.io/f/mwvqqjyw" method="POST" class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <label class="text-xs font-black uppercase text-slate-500 tracking-widest ml-4">Empresa / Negocio</label>
+                    <input type="text" name="empresa" required placeholder="Nombre de su empresa" class="w-full bg-white/5 border border-white/10 px-6 py-5 rounded-3xl outline-none focus:border-blue-500 transition">
+                </div>
+                <div class="space-y-4">
+                    <label class="text-xs font-black uppercase text-slate-500 tracking-widest ml-4">WhatsApp de Contacto</label>
+                    <input type="text" name="whatsapp" required placeholder="+502" class="w-full bg-white/5 border border-white/10 px-6 py-5 rounded-3xl outline-none focus:border-blue-500 transition">
+                </div>
+                <div class="md:col-span-2 space-y-4">
+                    <label class="text-xs font-black uppercase text-slate-500 tracking-widest ml-4">Servicios de Interés</label>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <label class="bg-white/5 border border-white/10 p-4 rounded-2xl flex items-center cursor-pointer hover:bg-blue-600/20 transition">
+                            <input type="checkbox" name="servicio_monday" class="mr-3"> <span class="text-xs">Monday CRM</span>
+                        </label>
+                        <label class="bg-white/5 border border-white/10 p-4 rounded-2xl flex items-center cursor-pointer hover:bg-blue-600/20 transition">
+                            <input type="checkbox" name="servicio_kerio" class="mr-3"> <span class="text-xs">Kerio Backup</span>
+                        </label>
+                        <label class="bg-white/5 border border-white/10 p-4 rounded-2xl flex items-center cursor-pointer hover:bg-blue-600/20 transition">
+                            <input type="checkbox" name="servicio_wasabi" class="mr-3"> <span class="text-xs">Wasabi Cloud</span>
+                        </label>
+                        <label class="bg-white/5 border border-white/10 p-4 rounded-2xl flex items-center cursor-pointer hover:bg-blue-600/20 transition">
+                            <input type="checkbox" name="servicio_atera" class="mr-3"> <span class="text-xs">Atera IA</span>
+                        </label>
+                        <label class="bg-white/5 border border-white/10 p-4 rounded-2xl flex items-center cursor-pointer hover:bg-blue-600/20 transition">
+                            <input type="checkbox" name="servicio_msp360" class="mr-3"> <span class="text-xs">MSP360 XDR</span>
+                        </label>
+                        <label class="bg-white/5 border border-white/10 p-4 rounded-2xl flex items-center cursor-pointer hover:bg-blue-600/20 transition">
+                            <input type="checkbox" name="servicio_manychat" class="mr-3"> <span class="text-xs">ManyChat Bot</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Anti-spam -->
+                <input type="text" name="_gotcha" style="display:none">
+                
+                <button type="submit" class="md:col-span-2 bg-blue-600 text-white py-6 rounded-3xl font-black text-lg hover:bg-blue-700 transition shadow-2xl shadow-blue-500/40 transform hover:scale-[1.01]">
+                    Enviar Solicitud de Información
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="py-20 text-center border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-3xl font-black text-white mb-6 animate__animated animate__fadeIn"><span class="text-blue-500">COMP</span>TECH</div>
+            <p class="text-slate-500 text-sm mb-2">Km. 15.5 Carretera a El Salvador, Plaza Condado Concepción, Oficina 5F-1, Guatemala.</p>
+            <p class="text-slate-600 text-[10px] font-bold tracking-[0.4em] mt-12 uppercase italic">© 2025 COMPTECH Guatemala - Security & Continuity</p>
+        </div>
+    </footer>
+
+    <script>
+        // Efecto del Navbar al hacer scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('bg-slate-950/90', 'backdrop-blur-xl', 'py-4');
+            else nav.classList.remove('bg-slate-950/90', 'backdrop-blur-xl', 'py-4');
+        });
+
+        // Inicialización de Animaciones ScrollReveal
+        const sr = ScrollReveal({ 
+            distance: '60px', 
+            duration: 1200, 
+            delay: 200, 
+            reset: false,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)'
+        });
+
+        sr.reveal('.reveal-left', { origin: 'left' });
+        sr.reveal('.reveal-right', { origin: 'right' });
+        sr.reveal('.reveal-top', { origin: 'top' });
+        sr.reveal('.reveal-bottom', { origin: 'bottom', interval: 120 });
+    </script>
+</body>
+</html>
